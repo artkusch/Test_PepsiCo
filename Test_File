@@ -1,0 +1,42 @@
+Задача по jQuery
+
+1.
+
+$('. userinput ').on('click', function(){
+	...
+});
+
+2.
+
+$(". userinput ", "div#Block1")
+
+3.
+
+$("PopupDIV").fadeIn();
+$(“PopupDIV”).centerElement();
+
+
+SQL
+
+1.
+
+SELECT  *
+FROM    Table1
+WHERE   EntityID  NOT IN (SELECT EntityID FROM Table2)
+
+2.
+
+SELECT 
+CatalogID,
+(PositionPrice* PositionQuantity)
+FROM Table1
+WHERE RequestID = “111”
+
+3.
+
+SELECT 
+CatalogID,
+(PositionPrice* PositionQuantity)
+FROM Table1
+WHERE RequestID = “111”, (PositionPrice* PositionQuantity) > "100000"
+
